@@ -1,3 +1,4 @@
+require 'pry'
 class ArtistsController < ApplicationController
   def index
     @artists = Artist.all
@@ -8,6 +9,7 @@ class ArtistsController < ApplicationController
   end
 
   def new
+    #binding.pry
     @artist = Artist.new
   end
 
